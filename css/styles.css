@@ -641,7 +641,8 @@ img {
   width: 528px;
   height: 581px;
   background-color: rgba(255, 255, 255, 1);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 2s linear;
 }
 .btn-close {
   height: 30px;
