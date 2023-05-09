@@ -56,14 +56,16 @@ body {
 }
 .header-number:hover {
   color: rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
   transition-duration: 250ms;
-  transition-property: color;
+  transition-property: color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-number:focus {
   color: rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
   transition-duration: 250ms;
-  transition-property: color;
+  transition-property: color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail {
@@ -79,15 +81,19 @@ body {
   gap: 10px;
 }
 .header-mail:hover {
+  fill: rgba(33, 150, 243, 1);
   color: rgba(33, 150, 243, 1);
+  cursor: pointer;
   transition-duration: 250ms;
-  transition-property: color;
+  transition-property: color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:focus {
+  fill: rgba(33, 150, 243, 1);
   color: rgba(33, 150, 243, 1);
+  cursor: pointer;
   transition-duration: 250ms;
-  transition-property: color;
+  transition-property: color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-header:hover {
@@ -370,7 +376,7 @@ img {
   display: flex;
   box-sizing: border-box;
   width: 170px;
-  height: 92;
+  height: 92px;
   padding: 17.71px 32px 14.25px 32px;
   fill: rgba(175, 177, 184, 1);
   border: 1px solid rgba(175, 177, 184, 1);
@@ -399,20 +405,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-.header-mail:hover {
-  fill: rgba(33, 150, 243, 1);
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-mail:focus {
-  fill: rgba(33, 150, 243, 1);
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .icon-number {
   margin-left: 30px;
   display: flex;
@@ -420,20 +412,6 @@ img {
   align-items: center;
   transition-property: fill, cursor;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-number:hover {
-  fill: rgba(33, 150, 243, 1);
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-number:focus {
-  fill: rgba(33, 150, 243, 1);
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-icon {
@@ -565,6 +543,7 @@ img {
   text-align: center;
   padding-bottom: 27px;
   padding-top: 27px;
+  margin: 0px;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -642,7 +621,7 @@ img {
   height: 581px;
   background-color: rgba(255, 255, 255, 1);
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 2s linear;
+  transition: transform 2s ease-in;
 }
 .btn-close {
   height: 30px;
@@ -681,6 +660,11 @@ img {
 }
 .nav-div {
   position: relative;
+  color: rgba(33, 150, 243, 1);
+}
+.nav-div-portfolio {
+  position: relative;
+  color: rgba(33, 150, 243, 1);
 }
 .nav-div::after {
   content: "";
