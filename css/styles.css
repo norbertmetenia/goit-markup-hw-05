@@ -620,11 +620,11 @@ img {
   width: 528px;
   height: 581px;
   background-color: rgba(255, 255, 255, 1);
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 1s ease-in;
+  transform: translate(-50%, -50%);
+  transition: transform 2s ease-out;
 }
 .is-hidden .modal {
-  transform: scale(0);
+  transform: rotate(1080deg);
 }
 .btn-close {
   height: 30px;
